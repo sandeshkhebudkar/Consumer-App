@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/sandeshkhebudkar/Consumer-App/consumer-app/model"
+	"github.com/sandeshkhebudkar/Consumer-App/model"
 	"go.mongodb.org/mongo-driver/mongo"
 )
 

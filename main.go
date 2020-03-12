@@ -11,8 +11,8 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/sandeshkhebudkar/Consumer-App/consumer-app/database"
-	"github.com/sandeshkhebudkar/Consumer-App/consumer-app/service/book"
+	"github.com/sandeshkhebudkar/Consumer-App/database"
+	"github.com/sandeshkhebudkar/Consumer-App/service/book"
 	"go.mongodb.org/mongo-driver/mongo"
 
 	"github.com/Shopify/sarama"

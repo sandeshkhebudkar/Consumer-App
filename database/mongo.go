@@ -13,10 +13,10 @@ import (
 //Connect is use to add connection with db-client
 func Connect() (*mongo.Client, error) {
 
-	viper.SetConfigName("config")    // name of config file (without extension)
-	viper.AddConfigPath("../config") // path to look for the config file in
-	err1 := viper.ReadInConfig()     // Find and read the config file
-	if err1 != nil {                 // Handle errors reading the config file
+	viper.SetConfigName("config") // name of config file (without extension)
+	viper.AddConfigPath("config") // path to look for the config file in
+	err1 := viper.ReadInConfig()  // Find and read the config file
+	if err1 != nil {              // Handle errors reading the config file
 		panic(fmt.Errorf("Fatal error config file: %s", err1))
 	}
 	uri := viper.GetString("mongodb.URI")
